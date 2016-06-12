@@ -1,0 +1,11 @@
+version: '2'
+
+services:
+    django:
+        build:     
+            context: .
+            dockerfile: infrastructure/django/Dockerfile
+        image: millidavids/django-in-docker:django
+        env_file: .env
+        volumes:
+        - ./:/home/django
