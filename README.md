@@ -1,3 +1,3 @@
-# Django In Docker
+# Django Starter
 
-This is a repository that will provide a complete development environment for Django, using python 3.5, in docker.
+This repo will be a starter for django 1.9, using python 3.5, in a docker dev environment.
