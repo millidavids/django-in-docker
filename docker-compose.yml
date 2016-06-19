@@ -8,4 +8,11 @@ services:
         image: millidavids/django-in-docker:django
         env_file: .env
         volumes:
-        - ./:/home/django
+          - ./:/home/django
+        ports:
+          - "80:8000"
+        depends_on:
+          - db
+    db: 
+      image: postgres
+
