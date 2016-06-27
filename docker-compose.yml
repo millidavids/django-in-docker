@@ -10,9 +10,13 @@ services:
         volumes:
           - ./:/home/django
         ports:
-          - "80:8000"
+          - "80:80"
         depends_on:
+          - db
+        links:
           - db
     db: 
       image: postgres
+      ports:
+          - "5432"
 
